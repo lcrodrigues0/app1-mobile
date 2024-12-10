@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/salario_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/salario_rs"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/salario_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/salario_mensal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/salario_et"/>
+
+    <EditText
+        android:id="@+id/gastos_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/gastos_rs"
+        app:layout_constraintTop_toBottomOf="@id/salario_et"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:id="@+id/gastos_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gastos_totais_com_saude_e_educacao"
+        app:layout_constraintTop_toBottomOf="@+id/gastos_et"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <TextView
+        android:id="@+id/ir_msg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/frase_ir"
+        app:layout_constraintTop_toBottomOf="@+id/gastos_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/ir_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_value"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ir_msg_tv"
+        android:layout_marginTop="10dp"
+        android:textColor="#4e57b4"
+        android:textSize="30sp"
+        />
+
+    <Button
+        android:id="@+id/bnt_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ir_value_tv"
+        android:layout_margin="15dp"
+        app:cornerRadius="0dp"
+        android:text="@string/btn_calcular"
+        android:backgroundTint="#8ec256"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

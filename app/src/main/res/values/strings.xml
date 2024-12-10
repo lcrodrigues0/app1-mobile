@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">appIR</string>
+    <string name="salario_rs">Salário(R$)</string>
+    <string name="gastos_rs">Gastos (R$)</string>
+    <string name="salario_mensal">Salário mensal</string>
+    <string name="gastos_totais_com_saude_e_educacao">Gastos totais com saude e educação</string>
+    <string name="frase_ir">SEU IMPOSTO DE RENDA SERÁ:</string>
+    <string name="ir_value">R$ 0</string>
+    <string name="btn_calcular">CALCULAR</string>
+</resources>
